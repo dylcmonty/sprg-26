@@ -1,0 +1,522 @@
+\documentclass{article}
+
+\subsection*{Problem 12}
+
+Given the grouped frequencies (nm):
+\[
+\begin{array}{c|ccccccc}
+\text{Class} &[3.0,3.5)&[3.5,4.0)&[4.0,4.5)&[4.5,5.0)&[5.0,5.5)&[5.5,6.0)&[6.0,6.5)\\
+\hline
+f&5&15&27&34&22&14&7
+\end{array}
+\]
+\[
+\begin{array}{ccc}
+&[6.5,7.0)&[7.0,7.5)&[7.5,8.0)\\
+\hline
+&2&4&1
+\end{array}
+\]
+\[
+n=\sum f=5+15+27+34+22+14+7+2+4+1=131.
+\]
+
+\begin{enumerate}
+\item[(a)] Proportion $<5$:
+\[
+f_{<5}=5+15+27+34=81,\qquad \hat p(<5)=\frac{81}{131}\approx 0.6183.
+\]
+
+\item[(b)] Proportion $\ge 6$:
+\[
+f_{\ge 6}=7+2+4+1=14,\qquad \hat p(\ge 6)=\frac{14}{131}\approx 0.1069.
+\]
+\item[(c)] Relative-frequency histogram (heights $r_i=f_i/n$):
+\begin{figure}[ht]
+\centering
+\vspace{2in}
+\caption{Relative-frequency histogram}
+\end{figure}
+
+
+\item[(d)] Density histogram (heights $h_i=r_i/0.5=2f_i/131$):
+\begin{figure}[ht]
+\centering
+\vspace{2in}
+\caption{Density histogram (heights}
+\end{figure}
+
+\end{enumerate}
+
+\subsection*{Problem 14}
+
+Numerical summaries (given/obtained from the data set of $n=129$ shower-flow rates):
+
+\[
+\bar x \approx 7.72,\qquad \tilde x = x_{(65)}=7.0.
+\]
+\[
+x_{\min}=2.2,\quad x_{\max}=18.9,\quad \text{Range}=18.9-2.2=16.7.
+\]
+\[
+s^2\approx 14.1,\qquad s=\sqrt{14.1}\approx 3.76.
+\]
+
+Five-number / IQR (given/obtained from ordered data):
+\[
+Q_1\approx 5.6,\qquad Q_3\approx 9.8,\qquad \text{IQR}=9.8-5.6=4.2.
+\]
+
+Outlier fences (1.5$\times$IQR):
+\[
+\text{LF}=Q_1-1.5(\text{IQR})=5.6-1.5(4.2)=-0.7,
+\quad
+\text{UF}=Q_3+1.5(\text{IQR})=9.8+1.5(4.2)=16.1.
+\]
+So values $>16.1$ (e.g. $18.9$) are potential high outliers.
+
+(Shape) unimodal, right-skewed (long right tail).
+
+
+\subsection*{Problem 16}
+
+Cylinder strengths:
+\[
+6.1,5.8,7.8,7.1,7.2,9.2,6.6,8.3,7.0,8.3,7.8,8.1,7.4,8.5,8.9,9.8,9.7,14.1,12.6,11.2.
+\]
+
+\begin{enumerate}
+\item[(a)] Stem-and-leaf (stem = integer part, leaf = tenths):
+\[
+\begin{array}{c|l}
+5 & 8\\
+6 & 1\;6\\
+7 & 0\;1\;2\;4\;8\;8\\
+8 & 1\;3\;3\;5\;9\\
+9 & 2\;7\;8\\
+11& 2\\
+12& 6\\
+14& 1
+\end{array}
+\]
+
+\item[(b)] Comparison to beam data: cannot do without the beam observations (not provided).
+
+\item[(c)] 
+\begin{figure}[ht]
+\centering
+\vspace{2in}
+\caption{Dotplot}
+\end{figure}
+
+\end{enumerate}
+
+
+\subsection*{Problem 18}
+
+Frequencies for number of directors ($n=204$):
+\[
+\begin{array}{c|ccccccccccccccc}
+x&4&5&6&7&8&9&10&11&12&13&14&15&16&17&21&24&32\\
+\hline
+f&3&12&13&25&24&42&23&19&16&11&5&4&1&3&1&1&1
+\end{array}
+\]
+
+\begin{enumerate}
+\item[(a)] 
+\begin{figure}[ht]
+\centering
+\vspace{2in}
+\caption{Relative-frequency histogram:}
+\end{figure}
+
+\item[(b)]
+\begin{figure}[ht]
+\centering
+\vspace{2in}
+\caption{Part B: Relative-frequency histogram:}
+\end{figure}
+
+\item[(c)] Proportion with at most 10 directors:
+\[
+f(\le 10)=3+12+13+25+24+42+23=142,\qquad \hat p(\le 10)=\frac{142}{204}\approx 0.696.
+\]
+\end{enumerate}
+
+
+\subsection*{Problem 30}
+
+Frequencies:
+\[
+\begin{array}{l|r}
+\text{incorrect component} & 210\\
+\text{failed component} & 126\\
+\text{missing component} & 131\\
+\text{insufficient solder} & 67\\
+\text{excess solder} & 54
+\end{array}
+\qquad
+n=210+131+126+67+54=588.
+\]
+
+\[
+\begin{array}{l|r|r|r}
+\text{Category} & f & f/588 & \text{Cum.\%}\\
+\hline
+\text{incorrect component} & 210 & 0.3571 & 35.71\\
+\text{missing component} & 131 & 0.2228 & 58.00\\
+\text{failed component} & 126 & 0.2143 & 79.43\\
+\text{insufficient solder} & 67 & 0.1140 & 90.83\\
+\text{excess solder} & 54 & 0.0918 & 100.00
+\end{array}
+\]
+
+\subsection*{Problem 34}
+
+Urban (U), $n_U=9$:
+\[
+6,5,11,33,4,5,80,18,35 \quad (\sum=197).
+\]
+Farm (F), $n_F=13$:
+\[
+4,14,11,9,9,8,4,20,5,9.2,3,2,0.3 \quad (\sum=98.5).
+\]
+
+\begin{enumerate}
+\item[(a)] Means:
+\[
+\bar x_U=\frac{197}{9}=21.8889\approx 21.89,\qquad
+\bar x_F=\frac{98.5}{13}=7.5769\approx 7.58.
+\]
+
+\item[(b)] Medians (sort each):
+
+U sorted:
+\[
+4,5,5,6,11,18,33,35,80 \Rightarrow \tilde x_U=x_{(5)}=11.
+\]
+
+F sorted:
+\[
+0.3,2,3,4,4,5,8,9,9,9.2,11,14,20 \Rightarrow \tilde x_F=x_{(7)}=8.
+\]
+
+Urban mean vs median: right-skew due to large values (80, 35, 33) pulls mean up.
+
+\item[(c)] Trimmed mean (drop min and max):
+
+Urban:
+\[
+\bar x_{U,\text{trim}}=\frac{197-4-80}{7}=\frac{113}{7}=16.1429\approx 16.14,
+\quad \text{trim } \frac{1}{9}=11.11\%\text{ each tail.}
+\]
+
+Farm:
+\[
+\bar x_{F,\text{trim}}=\frac{98.5-0.3-20}{11}=\frac{78.2}{11}=7.1091\approx 7.11,
+\quad \text{trim } \frac{1}{13}=7.69\%\text{ each tail.}
+\]
+\end{enumerate}
+
+
+\subsection*{Problem 36}
+
+Data ($n=26$) and given $\sum x_i=9638$.
+
+\begin{enumerate}
+\item[(a)] Stem-and-leaf (stem=tens, leaf=ones):
+\[
+\begin{array}{c|l}
+32&5\;5\\
+33&4\;9\\
+35&6\;6\;9\;9\\
+36&3\;4\;4\;6\;9\\
+37&0\;3\;3\;4\;5\\
+38&9\\
+39&2\;3\;4\;7\\
+40&2\;3\\
+42&4
+\end{array}
+\]
+Right tail suggests $\bar x>\tilde x$.
+
+\item[(b)] Mean:
+\[
+\bar x=\frac{9638}{26}=370.6923\approx 370.69.
+\]
+Ordered data (given):
+\[
+325,325,334,339,356,356,359,359,363,364,364,366,369,
+\]
+\[
+370,373,373,374,375,389,392,393,394,397,402,403,424.
+\]
+Median (average of 13th and 14th):
+\[
+\tilde x=\frac{369+370}{2}=369.5.
+\]
+
+\item[(c)] Largest value 424 and median: median depends on 13th and 14th values (369, 370). Changing the largest value does not affect the median as long as it remains $\ge 370$.
+Largest possible decrease:
+\[
+424-370=54.
+\]
+Increase: no bound.
+
+\item[(d)] Convert to minutes ($y=x/60$):
+\[
+\bar y=\frac{370.6923}{60}=6.1782\approx 6.18,\qquad
+\tilde y=\frac{369.5}{60}=6.1583\approx 6.16.
+\]
+\end{enumerate}
+
+
+\subsection*{Problem 40}
+
+Ordered lifetimes ($n=50$).
+
+\begin{enumerate}
+\item Median:
+\[
+\tilde x=\frac{x_{(25)}+x_{(26)}}{2}=\frac{91+93}{2}=92.
+\]
+
+\item 25\% trimmed mean: remove $\lfloor 0.25(50)\rfloor=12$ from each end $\Rightarrow$ 26 left.
+Given remaining sum $=2480$:
+\[
+\bar x_{0.25}=\frac{2480}{26}=95.3846.
+\]
+
+\item 10\% trimmed mean: remove $0.10(50)=5$ from each end $\Rightarrow$ 40 left.
+Given remaining sum $=4089$:
+\[
+\bar x_{0.10}=\frac{4089}{40}=102.225.
+\]
+
+\item Mean: total sum $5963$:
+\[
+\bar x=\frac{5963}{50}=119.26.
+\]
+
+\item Comparison:
+\[
+\tilde x=92<\bar x_{0.25}\approx 95.38<\bar x_{0.10}=102.225<\bar x=119.26
+\]
+(right-skew; trimming reduces influence of large upper-end values).
+\end{enumerate}
+
+
+\subsection*{Problem 44}
+
+Data ($n=12$):
+\[
+180.5,181.7,180.9,181.6,182.6,181.6,181.3,182.1,182.1,180.3,181.7,180.5.
+\]
+
+\begin{enumerate}
+\item[(a)] Range:
+\[
+x_{\max}-x_{\min}=182.6-180.3=2.3.
+\]
+
+\item[(b)] Variance from definition (using $y_i=x_i-180$):
+\[
+\bar y=\frac{\sum y_i}{12}=\frac{16.9}{12}=1.408333\ldots
+\]
+\[
+\sum (y_i-\bar y)^2=5.769166\ldots
+\]
+\[
+s^2=\frac{5.769166\ldots}{11}=0.5244697\ldots \approx 0.5245.
+\]
+
+\item[(c)] Standard deviation:
+\[
+s=\sqrt{0.5244697\ldots}=0.7242028\ldots \approx 0.7242.
+\]
+
+\item[(d)] Shortcut method:
+\[
+S=\sum x_i=2176.9,\qquad SS=\sum x_i^2=394913.57,
+\]
+\[
+s^2=\frac{SS-\dfrac{S^2}{n}}{n-1}
+=\frac{394913.57-\dfrac{(2176.9)^2}{12}}{11}\approx 0.5245.
+\]
+\end{enumerate}
+
+
+\subsection*{Problem 46}
+
+Cooler ($n=15$):
+\[
+1.59,1.43,1.88,1.26,1.91,1.86,1.90,1.57,1.79,1.72,2.41,2.34,0.83,1.34,1.76
+\]
+Control ($n=11$):
+\[
+1.92,2.00,2.19,1.12,1.78,1.84,2.45,2.03,1.52,0.53,1.90
+\]
+Warmer ($n=14$):
+\[
+2.57,2.60,1.93,1.58,2.30,0.84,2.65,0.12,2.74,2.53,2.13,2.86,2.31,1.91
+\]
+
+\begin{enumerate}
+\item[(a)] Centers (computed from samples):
+\[
+\bar x_{\text{Cooler}}\approx 1.73,\quad \tilde x_{\text{Cooler}}\approx 1.76;
+\]
+[\
+\bar x_{\text{Control}}\approx 1.75,\quad \tilde x_{\text{Control}}\approx 1.84;
+\]
+[\
+\bar x_{\text{Warmer}}\approx 2.07,\quad \tilde x_{\text{Warmer}}\approx 2.30.
+\]
+
+\item[(b)] Standard deviations (computed from samples):
+\[
+s_{\text{Cooler}}\approx 0.40,\qquad s_{\text{Control}}\approx 0.54,\qquad s_{\text{Warmer}}\approx 0.80.
+\]
+
+\item[(c)] Fourth spreads (IQR) vs $s$: ordering matches
+\[
+\text{Cooler} < \text{Control} < \text{Warmer}.
+\]
+
+\item[(d)] 
+\begin{figure}[ht]
+\centering
+\vspace{2in}
+\caption{Comparative boxplot}
+\end{figure}
+
+
+
+\subsection*{Problem 48}
+
+Settled dust:
+\[
+U:\ 6,5,11,33,4,5,80,18,35\ (n=9),
+\qquad
+F:\ 4,14,11,9,9,8,4,20,5,9.2,3,2,0.3\ (n=13).
+\]
+Given:
+\[
+\sum x=237.0,\ \sum x^2=10079\ \text{(urban)},\qquad
+\sum x=128.4,\ \sum x^2=1617.94\ \text{(farm)}.
+\]
+
+\begin{enumerate}
+\item[(a)] Standard deviations (shortcut):
+
+\[
+s^2=\frac{\sum x^2-\dfrac{(\sum x)^2}{n}}{n-1}.
+\]
+
+\textbf{Urban:}
+\begin{align*}
+s_U^2
+&= \frac{10079-\dfrac{(237)^2}{9}}{8} \\[4pt]
+&= \frac{10079-\dfrac{56169}{9}}{8} \\[4pt]
+&= \frac{10079-6241}{8} \\[4pt]
+&= \frac{3838}{8} \\[4pt]
+&= 479.75,
+\end{align*}
+\[
+s_U=\sqrt{479.75}\approx 21.90.
+\]
+
+\textbf{Farm:}
+\begin{align*}
+s_F^2
+&= \frac{1617.94-\dfrac{(128.4)^2}{13}}{12} \\[4pt]
+&= \frac{1617.94-\dfrac{16486.56}{13}}{12} \\[4pt]
+&= \frac{1617.94-1268.1969\ldots}{12} \\[4pt]
+&= 29.1453\ldots,
+\end{align*}
+\[
+s_F=\sqrt{29.1453\ldots}\approx 5.40.
+\]
+
+
+\item[(c)]:
+\begin{figure}[ht]
+\centering
+\vspace{2in}
+\caption{Dust bag Box Plot}
+\end{figure}
+\end{enumerate}
+
+\end{enumerate}
+
+
+\subsection*{Problem 52}
+
+Deviations from mean for $n=5$:
+\[
+0.3,\ 0.9,\ 1.0,\ 1.3,\ d_5.
+\]
+
+\begin{enumerate}
+\item Fifth deviation:
+\[
+\sum (x_i-\bar x)=0 \Rightarrow d_5=-(0.3+0.9+1.0+1.3)=-3.5.
+\]
+
+\item One possible sample (pick $\bar x=10$):
+\[
+10.3,\ 10.9,\ 11.0,\ 11.3,\ 6.5.
+\]
+\end{enumerate}
+
+
+\subsection*{Problem 58}
+
+Comparative boxplot (two machines, $n=20$ each):
+
+Center: Machine 2 has larger median than Machine 1.\\
+Spread: Machine 2 has larger IQR (more variability).\\
+Outliers/shape: Machine 1 shows a possible high outlier; Machine 2 no clear outliers.\\
+Conclusion: Machine 2 higher typical dimension but less consistent; Machine 1 more consistent.
+
+
+\subsection*{Problem 76}
+
+Resistance to outliers:
+\begin{itemize}
+\item Mean: not resistant.
+\item Median: resistant.
+\item Trimmed mean: resistant (depends on trimming).
+\item Midrange $(x_{\min}+x_{\max})/2$: not resistant.
+\item Midfourth $(Q_1+Q_3)/2$: resistant.
+\end{itemize}
+
+
+\subsection*{Problem 78}
+
+Let $x_1,\dots,x_n$ have mean $\bar x$ and sample sd $s$.
+
+\begin{enumerate}
+\item[(a)] $y_i=x_i-\bar x$:
+\[
+\bar y=\frac{1}{n}\sum (x_i-\bar x)=\frac{1}{n}\left(\sum x_i-n\bar x\right)=0,
+\]
+\[
+s_y^2=\frac{1}{n-1}\sum (y_i-\bar y)^2=\frac{1}{n-1}\sum (x_i-\bar x)^2=s^2.
+\]
+
+\item[(b)] $z_i=\dfrac{x_i-\bar x}{s}$:
+\[
+\bar z=\frac{1}{n}\sum \frac{x_i-\bar x}{s}=\frac{1}{s}\cdot \frac{1}{n}\sum (x_i-\bar x)=0,
+\]
+\[
+s_z^2=\frac{1}{n-1}\sum (z_i-\bar z)^2
+=\frac{1}{n-1}\sum \left(\frac{x_i-\bar x}{s}\right)^2
+=\frac{1}{s^2}\cdot \frac{1}{n-1}\sum (x_i-\bar x)^2
+=\frac{s^2}{s^2}=1.
+\]
+\end{enumerate}
+
+\end{document}
+
